@@ -1,2 +1,2 @@
 # CodeHouse
-This is our project for Code 
+This is our project for CodeHouse
