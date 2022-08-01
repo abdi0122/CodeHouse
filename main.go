@@ -20,7 +20,19 @@ func main() {
 	profile = append(profile, Profile{Name: "Crislana", School: "ASU", Year: "Sophomore", Goals: "To be the very best like no one ever was"})
 
  	r := gin.Default()
+	m := melody.New()
  	r.GET("/api/profile", GetProfile)
+	
+	
+	r.Use(static.Serve("/", static.LocalFile("./frontend", true)))
+
+	r.GET("/chat", func(c *gin.Context) {
+		m.HandleRequest(c.Writer, c.Request)
+	})
+
+	m.HandleMessage(func(s *melody.Session, msg []byte) {
+		m.Broadcast(msg)
+	})
  	r.Run(":8090")
 	/*
 	r := gin.Default()
@@ -30,4 +42,6 @@ func main() {
 	})
 	r.Run(":8090")
 	*/
+	
+	
 }
