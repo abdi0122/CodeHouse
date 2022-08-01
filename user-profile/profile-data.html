@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+        body {
+          background-color: #E9AFA3;
+        }
+        h1, h2, h3 {
+          font-family: Arial, Helvetica, sans-serif;
+          color:#685044;
+        }
+        p {
+          font-family: Arial, Helvetica, sans-serif;
+          color: #685044;
+        }
+        label{
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+
+    </style>
+    <title>Profile Form</title>
+  </head>
+  <body>
+    <h1>{{.Name}}</h1>
+    <p><b>School:</b> {{.School}}</p>
+    <p><b>Year:</b> {{.Year}}</p>
+    <p><b>Courses:</b> {{.Courses}}</p>
+    <p><b>Interests:</b> {{.Interests}}</p>
+    <p><b>Goals:</b> {{.Goals}}</p>
+    <p><b>LinkedIn:</b> <a href="{{.LinkedIn}}">{{.LinkedIn}}</a></p>
+  </body>
+  <button><a href="index.html">Home</a></button>
+</html>
