@@ -8,7 +8,7 @@
       to come together and be heard, as well as find other women in stem to
       study with based on similar coursework.
     </p>
-    <router-link to="/about"><button>Login</button></router-link> |
+    <router-link to="/login"><button>Login</button></router-link> |
     <router-link to="/about"><button>Sign Up</button></router-link>
   </div>
 </template>
