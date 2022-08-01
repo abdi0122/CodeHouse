@@ -6,7 +6,7 @@
         <router-link to="/"><button class="portal-button">Community Page</button></router-link>
         <router-link to="/"><button class="portal-button">Chat Page</button></router-link>
         <router-link to="/"><button class="portal-button">Niche Page</button></router-link>
-        <router-link to="/"><button class="portal-button">Profile Page</button></router-link>
+        <button class="portal-button"><a href="../../public/profile-form.html">Profile Page</a></button>
     </div>
     <router-link to="/"><button>Logout</button></router-link>
   </div>
@@ -38,5 +38,9 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: white;
 }
 </style>

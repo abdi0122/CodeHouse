@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+        body {
+          background-color: #E9AFA3;
+        }
+        h1 {
+          font-family: Arial, Helvetica, sans-serif;
+          color: #685044;
+        }
+        p {
+          font-family: Arial, Helvetica, sans-serif;
+          color: #685044;
+        }
+        label{
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width: 70%;
+  height: 30%;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #3A405A;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3A405A;
+}
+    </style>
+    <title>Profile Form</title>
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+    <h1>Profile Form</h1>
+    <form action="/process" method="POST">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Name" />
+      <br />
+      <br />
+      <label for="location">Location</label>
+      <input type="text" name="location" id="location" placeholder="Location" />
+      <br />
+      <br />
+      <label for="school">School</label>
+      <input type="text" name="school" id="school" placeholder="School" />
+      <br />
+      <br />
+      <label for="year">Year</label>
+      <input type="text" name="year" id="year" placeholder="Year" />
+      <br />
+      <br />
+      <label for="courses">Courses</label>
+      <input type="text" name="courses" id="courses" placeholder="Courses" />
+      <br />
+      <br />
+      <label for="interests">Interests</label>
+      <input
+        type="text"
+        name="interests"
+        id="interests"
+        placeholder="Interests"
+      />
+      <br />
+      <br />
+      <label for="goals">Goals</label>
+      <input type="text" name="goals" id="goals" placeholder="Goals" />
+      <br />
+      <br />
+      <label for="linkedin">LinkedIn</label>
+      <input type="text" name="linkedin" id="linkedin" placeholder="LinkedIn" />
+      <br />
+      <br />
+      <input type="submit" />
+    </form>
+    </div>
+  </body>
+</html>

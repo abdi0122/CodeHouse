@@ -37,6 +37,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/PortalView.vue"),
   },
+  
 ];
 
 const router = new VueRouter({
